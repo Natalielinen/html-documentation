@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=KoHo:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
+    <title>HTML Documentation</title>
+    <style>
+        @media (max-width:1301px) {
+    .block-level-elements,
+    .inline-elements {
+        width: 60vw;
+        font-size: 16px;
+        padding: 10px 20px;
+    }
+}
+
+@media (max-width:1229px) {
+    .block-level-elements,
+    .inline-elements {
+        width: 50vw;
+        font-size: 14px;
+        padding: 10px 10px;
+    }
+}
+    </style>
+</head>
+
+<body>
+    <nav id="navbar">
+        <header>
+            <h1>HTML Documentation</h1>
+        </header>
+        <ul class="links">
+            <li><a href="#introduction" class="nav-link">Introduction</a></li>
+            <li><a href="#basics" class="nav-link">Basics</a></li>
+            <li><a href="#block_and_inline" class="nav-link">Block and Inline</a></li>
+            <li><a href="#html_tags" class="nav-link">HTML tags</a></li>
+            <li><a href="#attributes" class="nav-link">Attributes</a></li>
+            <li><a href="#svg" class="nav-link">SVG</a></li>
+            <li><a href="#semantic" class="nav-link">Semantic</a></li>
+            <li><a href="#global_attributes" class="nav-link">Global attributes</a></li>
+            <li><a href="#entities" class="nav-link">Entities</a></li>
+            <li><a href="#materials_and_resourses" class="nav-link">Materials and resourses</a></li>
+        </ul>
+    </nav>
+
+    <main id="main-doc">
+        <section id="introduction" class="main-section">
+            <header>Introduction</header>
+            <p>HTML stands for <b>H</b>yper <b>T</b>ext <b>M</b>arkup <b>L</b>anguage is&nbsp;the standard markup
+                language for
+                documents designed to&nbsp;be&nbsp;displayed in&nbsp;a&nbsp;web browser. It&nbsp;can
+                be&nbsp;assisted by&nbsp;technologies such as&nbsp;Cascading Style Sheets (CSS) and
+                scripting languages such as&nbsp;JavaScript.</p>
+            <p>HTML was designed by&nbsp;physicist and a&nbsp;contractor at&nbsp;CERN Tim Berners-Lee
+                in&nbsp;1980 for CERN researchers to&nbsp;use and share documents and it&nbsp;system
+                called ENQUIRE. In&nbsp;1989, Berners-Lee wrote a&nbsp;memo proposing an&nbsp;Internet-based
+                hypertext system. Berners-Lee specified HTML and wrote the browser and server software in&nbsp;late
+                1990.</p>
+            <p>The first publicly available description of&nbsp;HTML was a&nbsp;document called
+                &laquo;HTML&nbsp;Tags&raquo;, first mentioned on&nbsp;the Internet by&nbsp;Tim Berners-Lee
+                in&nbsp;late 1991. It&nbsp;describes 18&nbsp;elements comprising the initial, relatively
+                simple design of&nbsp;HTML. Except for the hyperlink tag, these were strongly influenced
+                by&nbsp;SGMLguid, an&nbsp;in-house Standard Generalized Markup Language (SGML)-based documentation
+                format at&nbsp;CERN. Eleven of&nbsp;these elements still exist in&nbsp;HTML&nbsp;4.</p>
+            <table class="html_versions">
+                <caption>HTML versions timeline</caption>
+                <thead>
+                    <tr>
+                        <th>Version</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>HTML 2</td>
+                        <td>November 24, 1995</td>
+                    </tr>
+                    <tr>
+                        <td>HTML 3</td>
+                        <td>January 14, 1997</td>
+                    </tr>
+                    <tr>
+                        <td>HTML 4</td>
+                        <td>December 18, 1997</td>
+                    </tr>
+                    <tr>
+                        <td>HTML 5</td>
+                        <td>October 28, 2014</td>
+                    </tr>
+                </tbody>
+            </table>
+
+
+
+            <code></code>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section id="basics" class="main-section">
+            <header>Basics</header>
+            <p>All HTML documents must start with a document type declaration
+            <code>&lt;!DOCTYPE html&gt;</code>
+            </p>
+            <p>The HTML document itself begins with <code>&lt;html&gt;</code> 
+                and ends with <code>&lt;&sol;html&gt;</code>.</p>
+            <p>The information about web-page is between <code>&lt;head&gt;</code>  
+                and <code>&lt;&sol;head&gt;</code>.</p>
+            <p>The visible part of the HTML document is between <code>&lt;body&gt;</code>  
+                and <code>&lt;&sol;body&gt;</code>.</p>    
+            <p>For example: </p>
+                <p>
+                    <code>
+                        <pre>
+                    &lt;!DOCTYPE html&gt;
+                    &lt;html lang="en"&gt;
+                        
+                    &lt;head&gt;
+                        &lt;meta charset="UTF-8"&gt;
+                        &lt;meta http-equiv="X-UA-Compatible" content="IE=edge"&gt;
+                        &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        &lt;title>Document&lt;&sol;title&gt;
+                    &lt;&sol;head&gt;
+
+                    &lt;body&gt;
+                        &lt;h1&gt;Hello World!&lt;&sol;h1&gt;
+                    &lt;&sol;body&gt;
+
+                    &lt;&sol;html&gt;
+                        </pre>
+                    </code>                   
+                </p>
+            
+            <p>The content of a web-page is described using tags. There a some popular tags:</p>
+            <ul>
+                <li><code>&lt;div&gt;</code><code>&lt;&sol;div&gt;</code> - a primitive block-level element</li>
+                <li><code>&lt;p&gt;</code><code>&lt;&sol;p&gt;</code> -  a paragraph</li>
+                <li><code>&lt;a&gt;</code><code>&lt;&sol;a&gt;</code> - a link </li>
+                <li><code>&lt;h1&gt;</code><code>&lt;&sol;h1&gt;</code> - <code>&lt;h6&gt;</code><code>&lt;&sol;h6&gt;</code> - a header</li>
+            </ul>
+
+            <p>There are many other tags that will be describe in next sections.</p>
+        </section>
+
+        <section id="block_and_inline" class="main-section">
+            <header>Block and Inline</header>
+            <p>Every HTML element has a default display value, depending on what type of element it is.
+               There are two display values: block and inline.</p>
+            <p>Block-level Elements</p>
+            <ul>
+                <li>A block-level element always starts on a new line.</li>
+                <li>A block-level element always takes up the full width available (stretches out to the left and right as far as it can).</li>
+                <li>A block level element has a top and a bottom margin, whereas an inline element does not.</li>
+            </ul>
+            <p>Inline Elements</p>
+            <ul>
+                <li>An inline element does not start on a new line.</li>
+                <li>An inline element only takes up as much width as necessary.</li>
+            </ul>
+        </section>
+
+        <section id="html_tags" class="main-section">
+            <header>HTML tags</header>
+            <p>Block-level elements</p>
+            <table class="block-level-elements">
+                <tbody>
+                    <tr> <!--first row-->
+                        <td><code>&lt;address&gt;</code></td>
+                        <td><code>&lt;article&gt;</code></td>
+                        <td><code>&lt;aside&gt;</code></td>
+                        <td><code>&lt;blockquote&gt;</code></td>
+                        <td><code>&lt;canvas&gt;</code></td>
+                        <td><code>&lt;dd&gt;</code></td>
+                        <td><code>&lt;div&gt;</code></td>
+                    </tr>
+
+                    <tr> <!--second row-->
+                        <td><code>&lt;dl&gt;</code></td>
+                        <td><code>&lt;dt&gt;</code></td>
+                        <td><code>&lt;fieldset&gt;</code></td>
+                        <td><code>&lt;figcaption&gt;</code></td>
+                        <td><code>&lt;figure&gt;</code></td>
+                        <td><code>&lt;footer&gt;</code></td>
+                        <td><code>&lt;form&gt;</code></td>
+                    </tr>
+
+                    <tr> <!--third row-->
+                        <td><code>&lt;h1&gt;-&lt;h6&gt;</code></td>
+                        <td><code>&lt;header&gt;</code></td>
+                        <td><code>&lt;hr&gt;</code></td>
+                        <td><code>&lt;li&gt;</code></td>
+                        <td><code>&lt;main&gt;</code></td>
+                        <td><code>&lt;nav&gt;</code></td>
+                        <td><code>&lt;noscript&gt;</code></td>
+                    </tr>
+                    <tr> <!--fourth row-->
+                        <td><code>&lt;ol&gt;</code></td>
+                        <td><code>&lt;p&gt;</code></td>
+                        <td><code>&lt;pre&gt;</code></td>
+                        <td><code>&lt;section&gt;</code></td>
+                        <td><code>&lt;table&gt;</code></td>
+                        <td><code>&lt;tfoot&gt;</code></td>
+                        <td><code>&lt;ul&gt;</code></td>
+                    </tr>
+
+                    <tr> <!--fifth row-->
+                        <td><code>&lt;video&gt;</code></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <p>Inline elements</p>
+            <table class="inline-elements">
+                <tbody>
+                    <tr> <!--first row-->
+                        <td><code>&lt;a&gt;</code></td>
+                        <td><code>&lt;abbr&gt;</code></td>
+                        <td><code>&lt;acronym&gt;</code></td>
+                        <td><code>&lt;b&gt;</code></td>
+                        <td><code>&lt;bdo&gt;</code></td>
+                        <td><code>&lt;big&gt;</code></td>
+                        <td><code>&lt;br&gt;</code></td>
+                    </tr>
+
+                    <tr> <!--second row-->
+                        <td><code>&lt;button&gt;</code></td>
+                        <td><code>&lt;cite&gt;</code></td>
+                        <td><code>&lt;code&gt;</code></td>
+                        <td><code>&lt;dfn&gt;</code></td>
+                        <td><code>&lt;em&gt;</code></td>
+                        <td><code>&lt;i&gt;</code></td>
+                        <td><code>&lt;img&gt;</code></td>
+                    </tr>
+
+                    <tr> <!--third row-->
+                        <td><code>&lt;input&gt;</code></td>
+                        <td><code>&lt;kbd&gt;</code></td>
+                        <td><code>&lt;label&gt;</code></td>
+                        <td><code>&lt;map&gt;</code></td>
+                        <td><code>&lt;object&gt;</code></td>
+                        <td><code>&lt;output&gt;</code></td>
+                        <td><code>&lt;q&gt;</code></td>
+                    </tr>
+                    <tr> <!--fourth row-->
+                        <td><code>&lt;samp&gt;</code></td>
+                        <td><code>&lt;script&gt;</code></td>
+                        <td><code>&lt;select&gt;</code></td>
+                        <td><code>&lt;small&gt;</code></td>
+                        <td><code>&lt;span&gt;</code></td>
+                        <td><code>&lt;strong&gt;</code></td>
+                        <td><code>&lt;sub&gt;</code></td>
+                    </tr>
+
+                    <tr> <!--fifth row-->
+                        <td><code>&lt;sup&gt;</code></td>
+                        <td><code>&lt;textarea&gt;</code></td>
+                        <td><code>&lt;time&gt;</code></td>
+                        <td><code>&lt;tt&gt;</code></td>
+                        <td><code>&lt;var&gt;</code></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                </tbody>
+            </table>      
+        </section>
+
+        <section id="attributes" class="main-section">
+            <header>Attributes</header>
+            <p>HTML attributes provide additional information about HTML elements.</p>
+            
+            <ul>
+                <li>All HTML elements can have attributes</li>
+                <li>Attributes provide additional information about elements</li>
+                <li>Attributes are always specified in the start tag</li>
+                <li>Attributes usually come in name/value pairs like: name="value"</li>
+            </ul>
+
+            <p>For example: <code>&lt;img src="image.jpg" alt="Image" width="100" height="200"&gt;</code></p>
+            <p>In this example <code>&lt;img&gt;</code> tag contain four attributes:</p>
+            <ul>
+                <li>src - contain the path to image</li>
+                <li>alt - provide additional text content to image if the image can not be displayed</li>
+                <li>width - describe how wide the image must be</li>
+                <li>height - describe the height of the image</li>
+            </ul>
+
+            <p>All attributes you can find on <a href="https://www.w3schools.com/tags/ref_attributes.asp" target="_blank">w3schools</a>.</p>
+        </section>
+
+        <section id="svg" class="main-section">
+            <header>SVG</header>
+            <p>SVG defines vector-based graphics in XML format.</p>
+            
+            <ul>
+                <li>SVG stands for Scalable Vector Graphics</li>
+                <li>SVG is used to define graphics for the Web</li>
+                <li>SVG is a W3C recommendation</li>
+            </ul>
+
+            <p>The <code>&lt;svg&gt;</code> tag is a container for SVG grafics. 
+               SVG has several methods for drawing paths, boxes, circles, text, and graphic images.
+            </p>
+
+        </section>
+
+        <section id="semantic" class="main-section">
+            <header>Semantic</header>
+            <p>Semantic elements = elements with a meaning.</p>
+            <p>A semantic element clearly describes its meaning to both the browser and the developer.</p>
+            <p>Examples of non-semantic elements: <code>&lt;div&gt;</code> and <code>&lt;span&gt;</code> - Tells nothing about its content.</p>
+            <p>Examples of semantic elements: <code>&lt;form&gt;</code>, <code>&lt;table&gt;</code>, and <code>&lt;article&gt;</code> - 
+                Clearly defines its content.</p>
+
+                <p>List of semantic elements</p>
+                <ul>
+                    <li>article</li>
+                    <li>aside</li>
+                    <li>details</li>
+                    <li>figcaption</li>
+                    <li>figure</li>
+                    <li>footer</li>
+                    <li>header</li>
+                    <li>main</li>
+                    <li>mark</li>
+                    <li>nav</li>
+                    <li>section</li>
+                    <li>summary</li>
+                    <li>time</li>
+                </ul>
+        </section>    
+       
+        <section id="global_attributes" class="main-section">
+            <header>Global attributes</header>
+            <p>The global attributes are attributes that can be used with all HTML elements.</p>
+            <p>For example: attribute class or id it is the global attributes.</p>
+            <p>Full lis of the global attributes you can find on <a href="https://www.w3schools.com/tags/ref_standardattributes.asp" target="_blank">w3schools</a></p>
+            
+        </section>
+
+        <section id="entities" class="main-section">
+            <header>Entities</header>
+            <p>Reserved characters in HTML must be replaced with character entities.</p>
+            <p>If you use the less than (&lt;) or greater than (&gt;) signs in your text, the browser might mix them with tags.</p>
+            <p>Character entities are used to display reserved characters in HTML.</p>
+            <p>There are many resouses to find all the HTML entities. You can find it 
+                <a href="https://dev.w3.org/html5/html-author/charref" target="_blank">here</a> or 
+                <a href="https://www.toptal.com/designers/htmlarrows/" target="_blank">here</a>.</p>
+        </section>
+
+        <section id="materials_and_resourses" class="main-section">
+            <header>Materials and resourses</header>
+            <p>This documentation created using materials from <a href="https://www.w3schools.com/" target="_blank">w3schools</a>
+            and <a href="https://en.wikipedia.org/wiki/Main_Page" target="_blank">wikipedia</a>.
+            </p>
+        </section>
+
+
+    </main>
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>

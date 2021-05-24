@@ -1,0 +1,125 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    background-color: rgb(242, 242, 242);
+    font-family: 'KoHo', sans-serif;
+}
+
+#navbar {
+    position: fixed;
+    min-width: 290px;
+    top: 0px;
+    left: 0px;
+    width: 300px;
+    height: 100%;
+    border-right: solid;
+    border-color: rgb(36, 36, 36);
+}
+
+#navbar ul {
+    height: 88%;
+    padding: 0;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+
+#navbar ul li {
+    padding: 20px 30px;
+    border-top: 2px solid rgb(36, 36, 36);
+    cursor: pointer;
+}
+
+#navbar ul li:hover {
+    background-color: rgb(226, 226, 226);
+    text-decoration: underline;
+
+}
+#navbar ul a {
+    color: rgb(36, 36, 36);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#navbar h1 {
+    padding: 20px 30px;
+}
+
+#main-doc {
+    margin-left: 310px;
+}
+
+#main-doc header {
+    font-size: 24px;
+    font-weight: 600;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
+    color: rgb(36, 36, 36);
+    padding: 20px 25px; 
+}
+
+#main-doc p {
+    padding: 10px 35px;
+    font-size: 18px;
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.html_versions {
+    margin: 0 auto;
+    padding: 10px 35px;
+    font-size: 18px;
+    border: 1px dotted rgb(161, 161, 161);
+    border-collapse: collapse;
+}
+
+.html_versions caption {
+    font-weight: 700;
+    padding: 10px 0;
+}
+
+.html_versions tr,
+.html_versions th,
+.html_versions td {
+    border: 1px dotted rgb(161, 161, 161);
+    padding: 20px 60px;
+
+}
+
+.links {
+    list-style: none;
+
+}
+
+section ul{
+    list-style: none;
+    margin-left: 60px;
+    font-style: italic;
+}
+code {
+    color:blue;
+    font-style: normal;
+}
+
+.block-level-elements,
+.inline-elements {
+    width: 70vw;
+    margin: 0 auto;
+    padding: 10px 35px;
+    font-size: 18px;
+    border: 1px dotted rgb(161, 161, 161);
+    border-collapse: collapse;
+}
+
+.block-level-elements tr,
+.block-level-elements td,
+.inline-elements tr,
+.inline-elements td {
+    border: 1px dotted rgb(161, 161, 161);
+    padding: 10px 22px;
+}
