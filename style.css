@@ -9,6 +9,7 @@ body {
     display: flex;
     background-color: rgb(242, 242, 242);
     font-family: 'KoHo', sans-serif;
+    font-size: 1.2em;
 }
 
 #navbar {
@@ -38,7 +39,6 @@ body {
 #navbar ul li:hover {
     background-color: rgb(226, 226, 226);
     text-decoration: underline;
-
 }
 #navbar ul a {
     color: rgb(36, 36, 36);
@@ -56,7 +56,7 @@ body {
 }
 
 #main-doc header {
-    font-size: 24px;
+    /* font-size: 24px; */
     font-weight: 600;
     letter-spacing: 0.2em;
     text-transform: uppercase;
@@ -65,8 +65,9 @@ body {
 }
 
 #main-doc p {
+    width: auto;
     padding: 10px 35px;
-    font-size: 18px;
+    /* font-size: 18px; */
     line-height: 1.5em;
     text-align: justify;
 }
@@ -74,27 +75,17 @@ body {
 .html_versions {
     margin: 0 auto;
     padding: 10px 35px;
-    font-size: 18px;
-    border: 1px dotted rgb(161, 161, 161);
-    border-collapse: collapse;
+    /* font-size: 18px; */
+    /* border: 1px dotted rgb(161, 161, 161); */
 }
 
-.html_versions caption {
+.html_versions-title {
     font-weight: 700;
     padding: 10px 0;
 }
 
-.html_versions tr,
-.html_versions th,
-.html_versions td {
-    border: 1px dotted rgb(161, 161, 161);
-    padding: 20px 60px;
-
-}
-
 .links {
     list-style: none;
-
 }
 
 section ul{
@@ -107,7 +98,8 @@ code {
     font-style: normal;
 }
 
-.block-level-elements {
+.block-level-elements,
+.inline-elements {
     margin: 0;
     text-align: center; 
     columns: 5;
