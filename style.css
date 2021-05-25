@@ -52,6 +52,7 @@ body {
 
 #main-doc {
     margin-left: 310px;
+    width: auto;
 }
 
 #main-doc header {
@@ -106,20 +107,9 @@ code {
     font-style: normal;
 }
 
-.block-level-elements,
-.inline-elements {
-    width: 70vw;
-    margin: 0 auto;
-    padding: 10px 35px;
-    font-size: 18px;
-    border: 1px dotted rgb(161, 161, 161);
-    border-collapse: collapse;
+.block-level-elements {
+    margin: 0;
+    text-align: center; 
+    columns: 5;
 }
 
-.block-level-elements tr,
-.block-level-elements td,
-.inline-elements tr,
-.inline-elements td {
-    border: 1px dotted rgb(161, 161, 161);
-    padding: 10px 22px;
-}

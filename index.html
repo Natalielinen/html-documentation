@@ -12,23 +12,35 @@
         rel="stylesheet">
     <title>HTML Documentation</title>
     <style>
-        @media (max-width:1301px) {
-    .block-level-elements,
-    .inline-elements {
-        width: 60vw;
-        font-size: 16px;
-        padding: 10px 20px;
-    }
-}
+        /*****For small devices only*****/
+       @media (min-width: 768px) and (max-width: 991px) {
+           .block-level-elements {
+               columns: 3;
+           }
+           .block-level-elements li {
+               width: 150px;
+               margin: 0;
+           }
 
-@media (max-width:1229px) {
-    .block-level-elements,
-    .inline-elements {
-        width: 50vw;
-        font-size: 14px;
-        padding: 10px 10px;
-    }
-}
+       }
+       /*****For super small devices only*****/
+       @media (max-width: 479px) {
+           #navbar {
+               display: none;
+           }
+
+           #main-doc {
+               margin-left: 0;
+           }
+           /* .block-level-elements {
+               columns: 3;
+           }
+           .block-level-elements li {
+               width: 150px;
+               margin: 0;
+           } */
+
+       }
     </style>
 </head>
 
@@ -175,58 +187,39 @@
         <section id="html_tags" class="main-section">
             <header>HTML tags</header>
             <p>Block-level elements</p>
-            <table class="block-level-elements">
-                <tbody>
-                    <tr> <!--first row-->
-                        <td><code>&lt;address&gt;</code></td>
-                        <td><code>&lt;article&gt;</code></td>
-                        <td><code>&lt;aside&gt;</code></td>
-                        <td><code>&lt;blockquote&gt;</code></td>
-                        <td><code>&lt;canvas&gt;</code></td>
-                        <td><code>&lt;dd&gt;</code></td>
-                        <td><code>&lt;div&gt;</code></td>
-                    </tr>
-
-                    <tr> <!--second row-->
-                        <td><code>&lt;dl&gt;</code></td>
-                        <td><code>&lt;dt&gt;</code></td>
-                        <td><code>&lt;fieldset&gt;</code></td>
-                        <td><code>&lt;figcaption&gt;</code></td>
-                        <td><code>&lt;figure&gt;</code></td>
-                        <td><code>&lt;footer&gt;</code></td>
-                        <td><code>&lt;form&gt;</code></td>
-                    </tr>
-
-                    <tr> <!--third row-->
-                        <td><code>&lt;h1&gt;-&lt;h6&gt;</code></td>
-                        <td><code>&lt;header&gt;</code></td>
-                        <td><code>&lt;hr&gt;</code></td>
-                        <td><code>&lt;li&gt;</code></td>
-                        <td><code>&lt;main&gt;</code></td>
-                        <td><code>&lt;nav&gt;</code></td>
-                        <td><code>&lt;noscript&gt;</code></td>
-                    </tr>
-                    <tr> <!--fourth row-->
-                        <td><code>&lt;ol&gt;</code></td>
-                        <td><code>&lt;p&gt;</code></td>
-                        <td><code>&lt;pre&gt;</code></td>
-                        <td><code>&lt;section&gt;</code></td>
-                        <td><code>&lt;table&gt;</code></td>
-                        <td><code>&lt;tfoot&gt;</code></td>
-                        <td><code>&lt;ul&gt;</code></td>
-                    </tr>
-
-                    <tr> <!--fifth row-->
-                        <td><code>&lt;video&gt;</code></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                        <td></td>
-                    </tr>
-                </tbody>
-            </table>
+            
+            <ul class="block-level-elements">
+                <li><code>&lt;address&gt;</code></li>
+                <li><code>&lt;article&gt;</code></li>
+                <li><code>&lt;aside&gt;</code></li>
+                <li><code>&lt;blockquote&gt;</code></li>
+                <li><code>&lt;canvas&gt;</code></li>
+                <li><code>&lt;dd&gt;</code></li>
+                <li><code>&lt;div&gt;</code></li>
+                <li><code>&lt;dl&gt;</code></li>
+                <li><code>&lt;dt&gt;</code></li>
+                <li><code>&lt;fieldset&gt;</code></li>
+                <li><code>&lt;figcaption&gt;</code></li>
+                <li><code>&lt;figure&gt;</code></li>
+                <li><code>&lt;footer&gt;</code></li>
+                <li><code>&lt;form&gt;</code></li>
+                <li><code>&lt;h1&gt;-&lt;h6&gt;</code></li>
+                <li><code>&lt;header&gt;</code></li>
+                <li><code>&lt;hr&gt;</code></li>
+                <li><code>&lt;li&gt;</code></li>
+                <li><code>&lt;main&gt;</code></li>
+                <li><code>&lt;nav&gt;</code></li>
+                <li><code>&lt;noscript&gt;</code></li>
+                <li><code>&lt;ol&gt;</code></li>
+                <li><code>&lt;p&gt;</code></li>
+                <li><code>&lt;pre&gt;</code></li>
+                <li><code>&lt;section&gt;</code></li>
+                <li><code>&lt;table&gt;</code></li>
+                <li><code>&lt;tfoot&gt;</code></li>
+                <li><code>&lt;ul&gt;</code></li>
+                <li><code>&lt;video&gt;</code></li>
+            </ul>
+        
 
             <p>Inline elements</p>
             <table class="inline-elements">
